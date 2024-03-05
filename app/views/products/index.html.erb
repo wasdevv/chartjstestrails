@@ -2,6 +2,8 @@
 
 <h1>Products</h1>
 
+<%= line_chart Product.group_by_day(:created_at).count %>
+
 <div id="products">
   <% @products.each do |product| %>
     <%= render product %>

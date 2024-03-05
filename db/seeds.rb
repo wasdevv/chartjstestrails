@@ -12,7 +12,8 @@
     Product.create(name: "Product #{i}",
                    quantity: rand(1..1000),
                    price: rand(1..1000),
-                   desc: "Product #{i} description")
+                   desc: "Product #{i} description",
                    created_at: Time.now - i.days,
                    updated_at: Time.now - i.days,
+                )
 end
